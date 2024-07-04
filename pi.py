@@ -5,8 +5,8 @@ text = """
  
 # TODO
 
-new_test = text.replace(".","").replace(",","")
-words = new_test.split() #splitって何？
+NEW_test = text.replace(".","").replace(",","")
+words = NEW_test.split() #splitって何？
 print(words)    #この状態でリストになっている
 
 lengh_list = list(map(len,words))
