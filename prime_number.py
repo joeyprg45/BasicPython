@@ -1,8 +1,3 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
-
-# TODO
-
 #a = input("aの値を入力: ")
 #b = input("bの値を入力: ")
 
@@ -12,19 +7,21 @@ b = input("bの値を入力: ")
 def sosuu(n):
  if type(n) == float:
    return "error"
- elif n <= 1:
+ elif n < 1:
    return "error"
+ elif n == 1:
+   return False
  elif n > 1:
    for i in range(2, n):
         if n % i == 0:
-         return "False"
-        return "True"
+         return False
+        return True
 
 print(sosuu(61))
 print(sosuu(10))
 print(sosuu(1))
 print(sosuu(-5))
 print(sosuu(3.14))
-print(sosuu(37))
+print(sosuu(1))
 
 print(type(sosuu(61)))

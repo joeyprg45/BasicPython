@@ -16,4 +16,4 @@ def integral(f,a=0,b=1,n=100):
 
 print(integral(lambda x: sin(x),0,pi/2,50))
 print(integral(lambda x: 4 / (1 + x**2),0,1,100))
-print(integral(lambda x: exp(-x**2),-100,100,1000))
+print(integral(lambda x: pi**(1/2)*exp(-x**2),-100,100,1000))
